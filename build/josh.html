@@ -30,3 +30,24 @@
                     <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">
                         <span id="themeIcon">🌙</span>
                     </button>
+
+                     <!-- Hamburger Button (Mobile) -->
+                    <button id="hamburgerBtn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 group" aria-label="Toggle menu" aria-expanded="false">
+                        <span class="hamburger-line w-6 h-0.5 bg-slate-300 transition-all duration-300 ease-out group-hover:bg-white"></span>
+                        <span class="hamburger-line w-6 h-0.5 bg-slate-300 transition-all duration-300 ease-out group-hover:bg-white"></span>
+                        <span class="hamburger-line w-6 h-0.5 bg-slate-300 transition-all duration-300 ease-out group-hover:bg-white"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+         <!-- Mobile Menu Overlay -->
+        <div id="mobileMenu" class="md:hidden fixed inset-0 top-16 bg-slate-900/95 backdrop-blur-lg transform translate-x-full transition-transform duration-300 ease-in-out z-40">
+            <div class="flex flex-col items-center justify-center h-full gap-8 text-lg font-medium">
+                <a href="#about" class="mobile-nav-link text-slate-300 hover:text-white transition-colors transform hover:scale-110 duration-200">About</a>
+                <a href="#projects" class="mobile-nav-link text-slate-300 hover:text-white transition-colors transform hover:scale-110 duration-200">Projects</a>
+                <a href="#skills" class="mobile-nav-link text-slate-300 hover:text-white transition-colors transform hover:scale-110 duration-200">Skills</a>
+                <a href="#contact" class="mobile-nav-link text-slate-300 hover:text-white transition-colors transform hover:scale-110 duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
