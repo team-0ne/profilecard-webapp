@@ -152,6 +152,9 @@
 .object-cover {
   object-fit: cover;
 }
+.object-\[center_20\%\] {
+  object-position: center 20%;
+}
 .object-top {
   object-position: top;
 }
