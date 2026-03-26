@@ -3,9 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Team I</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-800 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-xl font-bold text-slate-50">Team I</a>
+                <div class="hidden md:flex gap-6 text-sm font-medium">
+                    <a href="#" class="text-slate-300 hover:text-white transition-colors">Home</a>
+                    <a href="#" class="text-slate-300 hover:text-white transition-colors">About</a>
+                    <a href="#" class="text-slate-300 hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <p class="text-sm font-medium text-blue-400 mb-4">Meet Our Team</p>
+            <h1 class="text-4xl sm:text-5xl font-bold text-slate-50 mb-6">
+                Our Experts
+            </h1>
+            <p class="text-lg text-slate-300 max-w-2xl mb-8 mx-auto">
+                Click on any profile card to view detailed information about each member of Team I
+            </p>
+        </div>
+
+        <!-- Profile Cards Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Profile Card 1 -->
+            <a href="aaron.html" class="group block">
+                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="aspect-square bg-slate-800 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 group-hover:from-blue-600/30 group-hover:to-purple-600/30 transition-all duration-300"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-32 h-32 rounded-full bg-slate-700 border-4 border-slate-600 group-hover:border-blue-400 transition-colors duration-300 flex items-center justify-center text-4xl">
+                                <img src="img/Confident portrait of a young man.png" alt="A'aron Pofi" class="hover:scale-110 transition-transform duration-300 ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-slate-50 mb-1 group-hover:text-blue-400 transition-colors">A'aron Pofi</h3>
+                        <p class="text-blue-400 text-sm font-medium mb-3">Fullstack developer</p>
+                        <p class="text-slate-400 text-sm mb-4">
+                            fullstack developer with a zeal for solving complex problems 
+                              
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Tailwindcss</span>
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">JavaScript</span>
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Python</span>
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">+..</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Profile Card 2 -->
+            <a href="joseph.html" class="group block">
+                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="aspect-square bg-slate-800 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-green-600/20 to-teal-600/20 group-hover:from-green-600/30 group-hover:to-teal-600/30 transition-all duration-300"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-32 h-32 rounded-full bg-slate-700 border-4 border-slate-600 group-hover:border-green-400 transition-colors duration-300 flex items-center justify-center text-4xl">
+                                <img src="img/joe.jpg.jpeg" alt="joseph" class="hover:scale-110 transition-transform duration-300" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-slate-50 mb-1 group-hover:text-green-400 transition-colors">Joseph Chinda</h3>
+                        <p class="text-blue-400 text-sm font-medium mb-3">frontend developer</p>
+                        <p class="text-slate-400 text-sm mb-4">
+                            passionate about building responsive, user-friendly interfaces
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">HTML5</span>
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">CSS</span>
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">JavaScript</span>
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">+..</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Profile Card 3 -->
+            <a href="favour.html" class="group block">
+                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="aspect-square bg-slate-800 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-pink-600/20 to-rose-600/20 group-hover:from-pink-600/30 group-hover:to-rose-600/30 transition-all duration-300"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-32 h-32 rounded-full bg-slate-700 border-4 border-slate-600 group-hover:border-pink-400 transition-colors duration-300 flex items-center justify-center text-4xl">
+                                <img src="img/favour.png" alt="Favour" class="hover:scale-110 transition-transform duration-300">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-slate-50 mb-1 transition-colors">Samuel Favour</h3>
+                        <p class="text-blue-400 text-sm font-medium mb-3">backend developer</p>
+                        <p class="text-slate-400 text-sm mb-4">
+                            building solid webapp backend with python and Fast API
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">python</span>
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Fast API</span>
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Docker</span>
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">+..</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Profile Card 4 -->
+            <a href="vitex.html" class="group block">
+                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="aspect-square bg-slate-800 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-amber-600/20 group-hover:from-orange-600/30 group-hover:to-amber-600/30 transition-all duration-300"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-32 h-32 rounded-full bg-slate-700 border-4 border-slate-600 group-hover:border-orange-400 transition-colors duration-300 flex items-center justify-center text-4xl">
+                                <img src="img/vitex.jpeg" alt="Vitex" class="hover:scale-110 transition-transform duration-300">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-slate-50 mb-1 group-hover:text-orange-400 transition-colors">Innocent Danjuma</h3>
+                        <p class="text-blue-400 text-sm font-medium mb-3">Frontend Developer</p>
+                        <p class="text-slate-400 text-sm mb-4">
+                            creating intuitive user interfaces with a focus on performance and accessibility.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">HTML</span>
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">JavaScript</span>
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">tailwindcss</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- Profile Card 5 -->
+            <a href="joseph.html" class="group block">
+                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="aspect-square bg-slate-800 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-cyan-600/20 to-blue-600/20 group-hover:from-cyan-600/30 group-hover:to-blue-600/30 transition-all duration-300"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-32 h-32 rounded-full bg-slate-700 border-4 border-slate-600 group-hover:border-cyan-400 transition-colors duration-300 flex items-center justify-center text-4xl">
+                                <img src="img/alex.png" alt="Alex Rodriguez" class="hover:scale-110 transition-transform duration-300">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-slate-50 mb-1 group-hover:text-cyan-400 transition-colors">Joshua Gboga</h3>
+                        <p class="text-blue-400 text-sm font-medium mb-3">Frontend developer</p>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Creating responsive user interfaces with a focus on performance and accessibility.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">HTML</span>
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">JavaScript</span>
+                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">tailwindcss</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-400 text-sm">
+        <p>&copy; 2024 Team I Profiles. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
