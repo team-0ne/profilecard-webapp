@@ -1829,3 +1829,182 @@ video {
     color: rgb(255 255 255 / var(--tw-text-opacity, 1));
   }
 }
+
+/* Custom Responsive Styles */
+.hero-content h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1rem;
+}
+
+.about-section {
+  padding: 3rem 1rem;
+}
+
+.about-section .profile-image-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.projects-section .project-grid {
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.skills-section .skills-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.contact-section {
+  padding: 3rem 1rem;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.125rem;
+  }
+  
+  .about-section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .about-section .profile-image-container {
+    max-width: 400px;
+  }
+  
+  .projects-section .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .skills-section .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-content .role-text {
+    font-size: 1.5rem;
+  }
+  
+  .about-section {
+    padding: 5rem 2rem;
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .about-section .profile-image-container {
+    max-width: 450px;
+    margin: 0;
+  }
+  
+  .projects-section .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .skills-section .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .contact-section {
+    padding: 5rem 2rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .profile-image {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+  
+  .hero-content .role-text {
+    font-size: 1.75rem;
+  }
+  
+  .hero-content p {
+    max-width: 600px;
+  }
+  
+  .about-section .profile-image-container {
+    max-width: 500px;
+  }
+  
+  .projects-section .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .skills-section .skills-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .profile-image {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1400px;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+  
+  .about-section .profile-image-container {
+    max-width: 550px;
+  }
+  
+  .projects-section {
+    max-width: 1200px;
+  }
+  
+  .profile-image {
+    max-width: 550px;
+    max-height: 700px;
+  }
+}
