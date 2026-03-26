@@ -5,180 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team I</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/main.js"></script>
+
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen">
 
     <!-- Navigation -->
-    <nav class="fixed w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-800 z-50">
+    <nav class="fixed w-full bg-slate-900/95 backdrop-blur-md border-b border-slate-800 z-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <a href="#" class="text-xl font-bold text-slate-50">Team I</a>
-                <div class="hidden md:flex gap-6 text-sm font-medium">
-                    <a href="#" class="text-slate-300 hover:text-white transition-colors">Home</a>
-                    <a href="#" class="text-slate-300 hover:text-white transition-colors">About</a>
-                    <a href="#" class="text-slate-300 hover:text-white transition-colors">Contact</a>
+                <!-- Logo -->
+                <a href="#" class="text-xl font-bold text-slate-50 hover:text-blue-400 transition-colors">Team I</a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex gap-8 text-sm font-medium">
+                    <a href="#" class="text-slate-300 hover:text-white transition-colors relative group">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#" class="text-slate-300 hover:text-white transition-colors relative group">
+                        About
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#" class="text-slate-300 hover:text-white transition-colors relative group">
+                        Contact
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
+                    </a>
                 </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line w-6 h-0.5 bg-slate-300 rounded-full"></span>
+                    <span class="hamburger-line w-6 h-0.5 bg-slate-300 rounded-full"></span>
+                    <span class="hamburger-line w-6 h-0.5 bg-slate-300 rounded-full"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobileMenu" class="md:hidden fixed inset-0 top-16 bg-slate-900/98 backdrop-blur-xl mobile-menu-enter transition-transform duration-300 ease-out z-40">
+            <div class="flex flex-col items-center justify-start pt-12 gap-6 text-lg font-medium px-4">
+                <a href="#" class="mobile-nav-link w-full text-center py-4 text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all duration-200">
+                    Home
+                </a>
+                <a href="#" class="mobile-nav-link w-full text-center py-4 text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all duration-200">
+                    About
+                </a>
+                <a href="#" class="mobile-nav-link w-full text-center py-4 text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all duration-200">
+                    Contact
+                </a>
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <main class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+    <main class="pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
 
-        <!-- Header -->
-        <div class="text-center mb-16">
-            <p class="text-sm font-medium text-blue-400 mb-4">Meet Our Team</p>
-            <h1 class="text-4xl sm:text-5xl font-bold text-slate-50 mb-6">
+        <!-- Header Section -->
+        <div class="text-center mb-12 sm:mb-16">
+            <p class="text-xs sm:text-sm font-medium text-blue-400 mb-3 sm:mb-4 tracking-wider uppercase">Meet Our Team</p>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-50 mb-4 sm:mb-6 leading-tight">
                 Our Experts
             </h1>
-            <p class="text-lg text-slate-300 max-w-2xl mb-8 mx-auto">
+            <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto px-2 sm:px-0">
                 Click on any profile card to view detailed information about each member of Team I
             </p>
         </div>
 
+    <div">
         <!-- Profile Cards Grid -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
 
-            <!-- Profile Card 1 -->
-            <a href="aaron.html" class="group block">
-                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
-                    <div class="aspect-square bg-slate-800 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 group-hover:from-blue-600/30 group-hover:to-purple-600/30 transition-all duration-300"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-32 h-32 rounded-full bg-slate-700 border-4 border-slate-600 group-hover:border-blue-400 transition-colors duration-300 flex items-center justify-center text-4xl">
-                                <img src="img/Confident portrait of a young man.png" alt="A'aron Pofi" class="hover:scale-110 transition-transform duration-300 ">
-                            </div>
-                        </div>
+                        <!-- Profile Card 1 - A'aron -->
+            <a href="aaron.html" class="group block profile-card">
+                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-blue-500/50 transition-all duration-300">
+                    <div class="aspect-[4/5] relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 group-hover:from-blue-600/30 group-hover:to-purple-600/30 transition-all duration-300 z-10"></div>
+                        <img src="img/Confident portrait of a young man.png" alt="A'aron Pofi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-slate-50 mb-1 group-hover:text-blue-400 transition-colors">A'aron Pofi</h3>
-                        <p class="text-blue-400 text-sm font-medium mb-3">Fullstack developer</p>
-                        <p class="text-slate-400 text-sm mb-4">
-                            fullstack developer with a zeal for solving complex problems 
-                              
+                    <div class="p-4 sm:p-5 md:p-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-slate-50 mb-1 group-hover:text-blue-400 transition-colors">A'aron Pofi</h3>
+                        <p class="text-blue-400 text-xs sm:text-sm font-medium mb-2 sm:mb-3">Fullstack Developer</p>
+                        <p class="text-slate-400 text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2">
+                            Fullstack developer with a zeal for solving complex problems and building scalable applications.
                         </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Tailwindcss</span>
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">JavaScript</span>
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Python</span>
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">+..</span>
+                        <div class="flex flex-wrap gap-1.5 sm:gap-2">
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Tailwind</span>
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">JavaScript</span>
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Python</span>
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">+..</span>
                         </div>
                     </div>
                 </article>
             </a>
 
-            <!-- Profile Card 2 -->
-            <a href="joseph.html" class="group block">
-                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
-                    <div class="aspect-square bg-slate-800 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-br from-green-600/20 to-teal-600/20 group-hover:from-green-600/30 group-hover:to-teal-600/30 transition-all duration-300"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-32 h-32 rounded-full bg-slate-700 border-4 border-slate-600 group-hover:border-green-400 transition-colors duration-300 flex items-center justify-center text-4xl">
-                                <img src="img/joe.jpg.jpeg" alt="joseph" class="hover:scale-110 transition-transform duration-300" >
-                            </div>
-                        </div>
+            <!-- Profile Card 2 - Joseph -->
+            <a href="joseph.html" class="group block profile-card">
+                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-green-500/50 transition-all duration-300">
+                    <div class="aspect-[4/5] relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-green-600/20 to-teal-600/20 group-hover:from-green-600/30 group-hover:to-teal-600/30 transition-all duration-300 z-10"></div>
+                        <img src="img/joe.jpg.jpeg" alt="Joseph Chinda" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-slate-50 mb-1 group-hover:text-green-400 transition-colors">Joseph Chinda</h3>
-                        <p class="text-blue-400 text-sm font-medium mb-3">frontend developer</p>
-                        <p class="text-slate-400 text-sm mb-4">
-                            passionate about building responsive, user-friendly interfaces
+                    <div class="p-4 sm:p-5 md:p-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-slate-50 mb-1 group-hover:text-green-400 transition-colors">Joseph Chinda</h3>
+                        <p class="text-green-400 text-xs sm:text-sm font-medium mb-2 sm:mb-3">Frontend Developer</p>
+                        <p class="text-slate-400 text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2">
+                            Passionate about building responsive, user-friendly interfaces with modern technologies.
                         </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">HTML5</span>
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">CSS</span>
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">JavaScript</span>
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">+..</span>
+                        <div class="flex flex-wrap gap-1.5 sm:gap-2">
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">HTML5</span>
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">CSS</span>
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">JavaScript</span>
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">+..</span>
                         </div>
                     </div>
                 </article>
             </a>
 
-            <!-- Profile Card 3 -->
-            <a href="favour.html" class="group block">
-                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
-                    <div class="aspect-square bg-slate-800 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-br from-pink-600/20 to-rose-600/20 group-hover:from-pink-600/30 group-hover:to-rose-600/30 transition-all duration-300"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-32 h-32 rounded-full bg-slate-700 border-4 border-slate-600 group-hover:border-pink-400 transition-colors duration-300 flex items-center justify-center text-4xl">
-                                <img src="img/favour.png" alt="Favour" class="hover:scale-110 transition-transform duration-300">
-                            </div>
-                        </div>
+            <!-- Profile Card 3 - Favour -->
+            <a href="favour.html" class="group block profile-card">
+                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-red-500/50 transition-all duration-300">
+                    <div class="aspect-[4/5] relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-rose-600/20 group-hover:from-red-600/30 group-hover:to-rose-600/30 transition-all duration-300 z-10"></div>
+                        <img src="img/favour.png" alt="Samuel Favour" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-slate-50 mb-1 transition-colors">Samuel Favour</h3>
-                        <p class="text-blue-400 text-sm font-medium mb-3">backend developer</p>
-                        <p class="text-slate-400 text-sm mb-4">
-                            building solid webapp backend with python and Fast API
+                    <div class="p-4 sm:p-5 md:p-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-slate-50 mb-1 group-hover:text-red-400 transition-colors">Samuel Favour</h3>
+                        <p class="text-red-400 text-xs sm:text-sm font-medium mb-2 sm:mb-3">Backend Developer</p>
+                        <p class="text-slate-400 text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2">
+                            Building solid webapp backends with Python and FastAPI, focused on performance.
                         </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">python</span>
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Fast API</span>
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Docker</span>
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">+..</span>
+                        <div class="flex flex-wrap gap-1.5 sm:gap-2">
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Python</span>
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">FastAPI</span>
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Docker</span>
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">+..</span>
                         </div>
                     </div>
                 </article>
             </a>
 
-            <!-- Profile Card 4 -->
-            <a href="vitex.html" class="group block">
-                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
-                    <div class="aspect-square bg-slate-800 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-amber-600/20 group-hover:from-orange-600/30 group-hover:to-amber-600/30 transition-all duration-300"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-32 h-32 rounded-full bg-slate-700 border-4 border-slate-600 group-hover:border-orange-400 transition-colors duration-300 flex items-center justify-center text-4xl">
-                                <img src="img/vitex.jpeg" alt="Vitex" class="hover:scale-110 transition-transform duration-300">
-                            </div>
-                        </div>
+            <!-- Profile Card 4 - Vitex -->
+            <a href="vitex.html" class="group block profile-card">
+                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-orange-500/50 transition-all duration-300">
+                    <div class="aspect-[4/5] relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-amber-600/20 group-hover:from-orange-600/30 group-hover:to-amber-600/30 transition-all duration-300 z-10"></div>
+                        <img src="img/vitex.jpeg" alt="Innocent Danjuma" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-slate-50 mb-1 group-hover:text-orange-400 transition-colors">Innocent Danjuma</h3>
-                        <p class="text-blue-400 text-sm font-medium mb-3">Frontend Developer</p>
-                        <p class="text-slate-400 text-sm mb-4">
-                            creating intuitive user interfaces with a focus on performance and accessibility.
+                    <div class="p-4 sm:p-5 md:p-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-slate-50 mb-1 group-hover:text-orange-400 transition-colors">Innocent Danjuma</h3>
+                        <p class="text-orange-400 text-xs sm:text-sm font-medium mb-2 sm:mb-3">Frontend Developer</p>
+                        <p class="text-slate-400 text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2">
+                            Creating intuitive user interfaces with a focus on performance and accessibility.
                         </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">HTML</span>
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">JavaScript</span>
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">tailwindcss</span>
+                        <div class="flex flex-wrap gap-1.5 sm:gap-2">
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">HTML</span>
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">JavaScript</span>
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Tailwind</span>
                         </div>
                     </div>
                 </article>
             </a>
 
-            <!-- Profile Card 5 -->
-            <a href="josh.html" class="group block">
-                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
-                    <div class="aspect-square bg-slate-800 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-br from-cyan-600/20 to-blue-600/20 group-hover:from-cyan-600/30 group-hover:to-blue-600/30 transition-all duration-300"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-32 h-32 rounded-full bg-slate-700 border-4 border-slate-600 group-hover:border-cyan-400 transition-colors duration-300 flex items-center justify-center text-4xl">
-                                <img src="img/joshua.png" alt="Joshua Gboga" class="hover:scale-110 transition-transform duration-300">
-                            </div>
-                        </div>
+            <!-- Profile Card 5 - Joshua -->
+            <a href="josh.html" class="group block profile-card sm:col-span-2 lg:col-span-1 lg:col-start-2">
+                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-cyan-500/50 transition-all duration-300">
+                    <div class="aspect-[4/5] relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-cyan-600/20 to-blue-600/20 group-hover:from-cyan-600/30 group-hover:to-blue-600/30 transition-all duration-300 z-10"></div>
+                        <img src="img/joshua.png" alt="Joshua Gboga" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-slate-50 mb-1 group-hover:text-cyan-400 transition-colors">Joshua Gboga</h3>
-                        <p class="text-blue-400 text-sm font-medium mb-3">Frontend developer</p>
-                        <p class="text-slate-400 text-sm mb-4">
+                    <div class="p-4 sm:p-5 md:p-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-slate-50 mb-1 group-hover:text-cyan-400 transition-colors">Joshua Gboga</h3>
+                        <p class="text-cyan-400 text-xs sm:text-sm font-medium mb-2 sm:mb-3">Frontend Developer</p>
+                        <p class="text-slate-400 text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2">
                             Creating responsive user interfaces with a focus on performance and accessibility.
                         </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">HTML</span>
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">JavaScript</span>
-                            <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">tailwindcss</span>
+                        <div class="flex flex-wrap gap-1.5 sm:gap-2">
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">HTML</span>
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">JavaScript</span>
+                            <span class="px-2 sm:px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Tailwind</span>
                         </div>
                     </div>
                 </article>
             </a>
 
         </div>
+    </div>    
     </main>
 
     <!-- Footer -->
-    <footer class="py-8 border-t border-slate-800 text-center text-slate-400 text-sm">
-        <p>&copy; 2024 Team I. All rights reserved.</p>
+    <footer class="py-6 sm:py-8 border-t border-slate-800 text-center text-slate-400 text-xs sm:text-sm px-4">
+        <p>&copy; 2026 Team I. All rights reserved.</p>
     </footer>
 
 </body>
