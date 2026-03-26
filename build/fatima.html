@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatima Ibrahim</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/main.js"></script>
+    
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased scroll-smooth">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-800 z-50">
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-xl font-bold text-slate-50">FI</a>
+                
+                <div class="flex items-center gap-6">
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex gap-6 text-sm font-medium nav-links">
+                        <a href="#home" class="text-slate-300 hover:text-white transition-colors">Home</a>
+                        <a href="#about" class="text-slate-300 hover:text-white transition-colors">About</a>
+                        <a href="#projects" class="text-slate-300 hover:text-white transition-colors">Projects</a>
+                        <a href="#skills" class="text-slate-300 hover:text-white transition-colors">Skills</a>
+                        <a href="#contact" class="text-slate-300 hover:text-white transition-colors">Contact</a>
+                    </div>
+                    
+                    <!-- Theme Toggle -->
+                    <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                        <span id="themeIcon">🌙</span>
+                    </button>
+
+                    <!-- Hamburger Button (Mobile) -->
+                    <button id="hamburgerBtn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 group" aria-label="Toggle menu" aria-expanded="false">
+                        <span class="hamburger-line w-6 h-0.5 bg-slate-300 transition-all duration-300 ease-out group-hover:bg-white"></span>
+                        <span class="hamburger-line w-6 h-0.5 bg-slate-300 transition-all duration-300 ease-out group-hover:bg-white"></span>
+                        <span class="hamburger-line w-6 h-0.5 bg-slate-300 transition-all duration-300 ease-out group-hover:bg-white"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobileMenu" class="md:hidden fixed inset-0 top-16 bg-slate-900/95 backdrop-blur-lg transform translate-x-full transition-transform duration-300 ease-in-out z-40">
+            <div class="flex flex-col items-center justify-center h-full gap-8 text-lg font-medium">
+                <a href="#home" class="mobile-nav-link text-slate-300 hover:text-white transition-colors transform hover:scale-110 duration-200">Home</a>
+                <a href="#about" class="mobile-nav-link text-slate-300 hover:text-white transition-colors transform hover:scale-110 duration-200">About</a>
+                <a href="#projects" class="mobile-nav-link text-slate-300 hover:text-white transition-colors transform hover:scale-110 duration-200">Projects</a>
+                <a href="#skills" class="mobile-nav-link text-slate-300 hover:text-white transition-colors transform hover:scale-110 duration-200">Skills</a>
+                <a href="#contact" class="mobile-nav-link text-slate-300 hover:text-white transition-colors transform hover:scale-110 duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="max-w-3xl hero-content">
+            <p class="text-sm font-medium text-blue-400 mb-4">Hello, I'm</p>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-50 mb-6 leading-tight">
+                Fatima Ibrahim
+            </h1>
+           
+            <p class="text-lg text-slate-300 mb-8 max-w-2xl leading-relaxed">
+               <div class="text-blue-400 text-2xl md:text-3xl lg:text-4xl font-medium mb-4 role-text">Backend Developer</div>
+               <div class="mb-4">Building robust and scalable server-side solutions<br>
+                </div>
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 cta-buttons">
+                <a href="#projects" class="px-6 py-3 bg-slate-100 text-slate-900 rounded-lg font-medium hover:bg-white transition-colors text-center">
+                    View Work
+                </a>
+                <a href="#contact" class="px-6 py-3 border border-slate-600 text-slate-200 rounded-lg font-medium hover:bg-slate-900 transition-colors text-center">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-950 about-section">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 container">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-50 mb-8">About Me</h2>
+            <div class="about-grid flex flex-row">
+                <div class="space-y-4 text-slate-300 leading-relaxed">
+                    <p> 
+                        I'm Fatima Ibrahim, a passionate backend developer with a focus on building efficient, scalable, and secure server-side applications. 
+                        I specialize in creating robust APIs and database solutions that power seamless user experiences.
+                    </p>
+                    <p>
+                        My journey in software development has been driven by a love for problem-solving and a desire to build systems that make a real impact. 
+                        I thrive in collaborative environments and am always eager to learn new technologies.
+                    </p>
+                    <p>
+                        In a tech-driven world, I believe in the power of clean code and continuous learning. I'm excited to connect with like-minded professionals and contribute to projects that make a difference.
+                    </p>
+                </div>
+                <div class="profile-image-container bg-slate-900 rounded-2xl p-2 w-full md:w-[400px] lg:w-[450px]">
+                    <img class="profile-image w-full h-auto max-h-[600px] rounded-xl mx-auto object-cover" 
+                        src="img/girl_with_glasses.png" 
+                        alt="Fatima Ibrahim">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto projects-section">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-50 mb-8 md:mb-12">Featured Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 project-grid">
+            
+            <!-- Project 1 -->
+            <article class="group card-dark bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-sm hover:shadow-md transition-all duration-300">
+                <div class="aspect-video bg-slate-800 relative overflow-hidden">
+                    <img src="img/girl_with_glasses.png" alt="Project 1" class="w-full h-full object-cover opacity-50">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-slate-50 mb-2">Coming Soon</h3>
+                    <p class="text-slate-300 text-sm mb-4">
+                        A new exciting project is on the way. Stay tuned for updates!
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Python</span>
+                        <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Django</span>
+                    </div>
+                    <div class="flex gap-4 text-sm font-medium">
+                        <a href="#" class="text-blue-400 hover:underline">Live Demo</a>
+                        <a href="#" class="text-slate-300 hover:text-white transition-colors">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="group card-dark bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-sm hover:shadow-md transition-all duration-300">
+                <div class="aspect-video bg-slate-800 relative overflow-hidden">
+                    <img src="img/girl_with_glasses.png" alt="Project 2" class="w-full h-full object-cover opacity-50">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-slate-50 mb-2">Coming Soon</h3>
+                    <p class="text-slate-300 text-sm mb-4">
+                        A new exciting project is on the way. Stay tuned for updates!
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">Node.js</span>
+                        <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">PostgreSQL</span>
+                    </div>
+                    <div class="flex gap-4 text-sm font-medium">
+                        <a href="#" class="text-blue-400 hover:underline">Live Demo</a>
+                        <a href="#" class="text-slate-300 hover:text-white transition-colors">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="group card-dark bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-sm hover:shadow-md transition-all duration-300">
+                <div class="aspect-video bg-slate-800 relative overflow-hidden">
+                    <img src="img/girl_with_glasses.png" alt="Project 3" class="w-full h-full object-cover opacity-50">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-slate-50 mb-2">Coming Soon</h3>
+                    <p class="text-slate-300 text-sm mb-4">
+                        A new exciting project is on the way. Stay tuned for updates!
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">FastAPI</span>
+                        <span class="px-3 py-1 text-xs bg-slate-800 text-slate-300 rounded-full">MongoDB</span>
+                    </div>
+                    <div class="flex gap-4 text-sm font-medium">
+                        <a href="#" class="text-blue-400 hover:underline">Live Demo</a>
+                        <a href="#" class="text-slate-300 hover:text-white transition-colors">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+</body>
+</html>
