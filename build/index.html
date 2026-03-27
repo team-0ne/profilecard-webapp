@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team I</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="javascript/main.js"></script>
+    
 
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen">
@@ -19,18 +19,11 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex gap-8 text-sm font-medium">
-                    <a href="#" class="text-slate-300 hover:text-white transition-colors relative group">
-                        Home
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
-                    </a>
-                    <a href="#" class="text-slate-300 hover:text-white transition-colors relative group">
-                        About
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
-                    </a>
-                    <a href="#" class="text-slate-300 hover:text-white transition-colors relative group">
-                        Contact
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
-                    </a>
+                   
+                    <!-- Theme Toggle -->
+                    <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                        <span id="themeIcon">🌙</span>
+                    </button>
                 </div>
 
                 <!-- Mobile Hamburger Button -->
@@ -81,7 +74,7 @@
                 <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-blue-500/50 transition-all duration-300">
                     <div class="aspect-[4/5] relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 group-hover:from-blue-600/30 group-hover:to-purple-600/30 transition-all duration-300 z-10"></div>
-                        <img src="img/Confident portrait of a young man.png" alt="A'aron Pofi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <img src="img/Gemini_Generated_Image_wg4uf7wg4uf7wg4u.png" alt="A'aron Pofi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-4 sm:p-5 md:p-6">
                         <h3 class="text-lg sm:text-xl font-semibold text-slate-50 mb-1 group-hover:text-blue-400 transition-colors">A'aron Pofi</h3>
@@ -126,11 +119,11 @@
             <a href="favour.html" class="group block profile-card">
                 <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-lg hover:shadow-2xl hover:border-red-500/50 transition-all duration-300">
                     <div class="aspect-[4/5] relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-rose-600/20 group-hover:from-red-600/30 group-hover:to-rose-600/30 transition-all duration-300 z-10"></div>
+                        <div class="absolute inset-0 bg-gradient-to-br from-red-200/20 to-rose-200/20 group-hover:from-red-400/20 group-hover:to-rose-400/20 transition-all duration-300 z-10"></div>
                         <img src="img/favour.png" alt="Samuel Favour" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="p-4 sm:p-5 md:p-6">
-                        <h3 class="text-lg sm:text-xl font-semibold text-slate-50 mb-1 group-hover:text-red-400 transition-colors">Samuel Favour</h3>
+                        <h3 class="text-lg sm:text-xl font-semibold text-slate-50 mb-1 group-hover:text-red-500 transition-colors">Samuel Favour</h3>
                         <p class="text-red-400 text-xs sm:text-sm font-medium mb-2 sm:mb-3">Backend Developer</p>
                         <p class="text-slate-400 text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2">
                             Building solid webapp backends with Python and FastAPI, focused on performance.
@@ -198,5 +191,7 @@
         <p>&copy; 2026 Team I. All rights reserved.</p>
     </footer>
 
+
+    <script src="javascript/main.js"></script>
 </body>
 </html>
