@@ -1,4 +1,6 @@
 /*! tailwindcss v4.2.2 | MIT License | https://tailwindcss.com */
+@import url("https://cdn.tailwindcss.com");
+@import url("https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4");
 @layer properties;
 .visible {
   visibility: visible;
@@ -71,8 +73,14 @@
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.h-\[29vh\] {
+  height: 29vh;
+}
 .h-auto {
   height: auto;
+}
+.h-fit {
+  height: fit-content;
 }
 .h-full {
   height: 100%;
@@ -170,6 +178,9 @@
 .object-cover {
   object-fit: cover;
 }
+.object-top {
+  object-position: top;
+}
 .text-center {
   text-align: center;
 }
@@ -225,13 +236,6 @@
 .duration-500 {
   --tw-duration: 500ms;
   transition-duration: 500ms;
-}
-.group-hover\:w-full {
-  &:is(:where(.group):hover *) {
-    @media (hover: hover) {
-      width: 100%;
-    }
-  }
 }
 .group-hover\:scale-110 {
   &:is(:where(.group):hover *) {
