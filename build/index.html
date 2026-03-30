@@ -11,6 +11,7 @@
 <body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen">
 
     <!-- Navigation -->
+    <input type="checkbox" id="mobileMenuToggle" class="hidden peer/menu">
     <nav class="fixed w-full bg-slate-900/95 backdrop-blur-md border-b border-slate-800 z-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
@@ -27,24 +28,24 @@
                 </div>
 
                 <!-- Mobile Hamburger Button -->
-                <button id="mobileMenuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none" aria-label="Toggle menu" aria-expanded="false">
+                <label for="mobileMenuToggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 cursor-pointer peer-hover/menu:opacity-0">
                     <span class="hamburger-line w-6 h-0.5 bg-slate-300 rounded-full"></span>
                     <span class="hamburger-line w-6 h-0.5 bg-slate-300 rounded-full"></span>
                     <span class="hamburger-line w-6 h-0.5 bg-slate-300 rounded-full"></span>
-                </button>
+                </label>
             </div>
         </div>
 
         <!-- Mobile Menu Overlay -->
-        <div id="mobileMenu" class="md:hidden fixed inset-0 top-16 bg-slate-900/98 backdrop-blur-xl mobile-menu-enter transition-transform duration-300 ease-out z-40">
+        <div id="mobileMenu" class="md:hidden fixed inset-0 top-16 bg-slate-900/98 backdrop-blur-xl mobile-menu-enter transition-transform duration-300 ease-out z-40 hidden peer-checked/menu:block">
             <div class="flex flex-col items-center justify-start pt-12 gap-6 text-lg font-medium px-4">
-                <a href="#" class="mobile-nav-link w-full text-center py-4 text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all duration-200">
+                <a href="#" class="mobile-nav-link w-full text-center py-4 text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all duration-200 hidden peer-checked/menu:block">
                     Home
                 </a>
-                <a href="#" class="mobile-nav-link w-full text-center py-4 text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all duration-200">
+                <a href="#" class="mobile-nav-link w-full text-center py-4 text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all duration-200 hidden peer-checked/menu:block">
                     About
                 </a>
-                <a href="#" class="mobile-nav-link w-full text-center py-4 text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all duration-200">
+                <a href="#" class="mobile-nav-link w-full text-center py-4 text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all duration-200 hidden peer-checked/menu:block">
                     Contact
                 </a>
             </div>
